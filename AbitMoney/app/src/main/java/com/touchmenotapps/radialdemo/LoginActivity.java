@@ -10,6 +10,7 @@ import android.os.Handler;
 import android.view.KeyEvent;
 import android.view.View;
 import android.widget.Button;
+import android.widget.ImageButton;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -17,7 +18,7 @@ import android.widget.Toast;
  * Created by rikimarutsui on 3/26/15.
  */
 public class LoginActivity extends Activity {
-    private Button loginBtn; // Login Button
+    private ImageButton loginBtn; // Login Button
     private TextView userAccount /* User Account */ , passcode /* Passcode */ ;
     private DialogInterface.OnClickListener dialogClickListener = new DialogInterface.OnClickListener() {
         @Override
@@ -41,7 +42,7 @@ public class LoginActivity extends Activity {
         super.onCreate(icicle);
         setContentView(R.layout.activity_login);
 
-        loginBtn = (Button) findViewById(R.id.button_login);
+        loginBtn = (ImageButton) findViewById(R.id.button_login);
         userAccount = (TextView) findViewById(R.id.text_login);
         passcode = (TextView) findViewById(R.id.text_passcode);
 

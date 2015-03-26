@@ -3,7 +3,7 @@
     android:id="@+id/background"
     android:layout_width="fill_parent"
     android:layout_height="fill_parent"
-    android:background="#ff00adcc"
+    android:background="#cfe7ec"
     xmlns:android="http://schemas.android.com/apk/res/android">
     <TextView
         android:id="@+id/text_digit"

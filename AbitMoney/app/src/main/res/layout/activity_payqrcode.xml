@@ -2,7 +2,7 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:orientation="vertical" android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#ff00adcc"
+    android:background="#cfe7ec"
     android:id="@+id/pay_qrcode_background">
 
 </RelativeLayout>

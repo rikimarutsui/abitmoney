@@ -10,6 +10,7 @@ import android.view.View;
 import android.view.Window;
 import android.widget.Button;
 import android.widget.FrameLayout;
+import android.widget.ImageButton;
 import android.widget.TextView;
 
 import com.touchmenotapps.widget.radialmenu.menu.v1.RadialMenuItem;
@@ -131,7 +132,7 @@ public class ChestMenuActivity extends FragmentActivity {
             }
         });
 
-        Button testButton = (Button) this.findViewById(R.id.chest_button);
+        ImageButton testButton = (ImageButton) this.findViewById(R.id.chest_button);
         testButton.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
                 pieMenu.show(v);

@@ -3,17 +3,18 @@
     android:id="@+id/background"
     android:layout_width="fill_parent"
     android:layout_height="fill_parent"
-    android:background="#ff00adcc"
+    android:background="#cfe7ec"
     xmlns:android="http://schemas.android.com/apk/res/android">
     <TextView
         android:id="@+id/text_login"
         android:layout_width="wrap_content"
         android:layout_height="40dp"
-        android:text="Login : "
-        android:hint="Login : "
+        android:text="Login "
+        android:hint="Login "
         android:layout_x="45dp"
         android:layout_y="506dp"
-        android:textSize="24dp" />
+        android:textSize="24dp"
+        android:textColor="#ff000000" />
     <TextView
         android:id="@+id/text_passcode"
         android:layout_width="wrap_content"
@@ -22,7 +23,8 @@
         android:hint="Passcode : "
         android:layout_x="4dp"
         android:layout_y="556dp"
-        android:textSize="24dp" />
+        android:textSize="24dp"
+        android:textColor="#ff000000" />
     <EditText
         android:id="@+id/text_login"
         android:layout_width="471dp"
@@ -32,7 +34,7 @@
         android:textSize="18sp"
         android:layout_x="120dp"
         android:layout_y="508dp"
-        android:background="#af21efff"
+        android:background="#ffffff"
         android:textColor="#ff000000" />
     <EditText
         android:id="@+id/text_passcode"
@@ -44,14 +46,15 @@
         android:password="true"
         android:layout_x="120dp"
         android:layout_y="557dp"
-        android:background="#af21efff"
+        android:background="#ffffff"
         android:textColor="#ff000000" />
-    <Button
+
+    <ImageButton
+        android:layout_width="312dp"
+        android:layout_height="312dp"
         android:id="@+id/button_login"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Login"
-        android:hint="Login"
-        android:layout_x="266dp"
-        android:layout_y="437dp" />
+        android:layout_x="148dp"
+        android:layout_y="123dp"
+        android:background="@drawable/app_icon" />
+
 </AbsoluteLayout>
