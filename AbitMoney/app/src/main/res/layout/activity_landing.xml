@@ -25,8 +25,8 @@
         android:layout_y="518dp" />
     <ProgressBar
         android:id="@+id/progress_bar"
-        android:layout_width="130dp"
-        android:layout_height="130dp"
-        android:layout_x="238dp"
-        android:layout_y="316dp" />
+        android:layout_width="64dp"
+        android:layout_height="64dp"
+        android:layout_x="267dp"
+        android:layout_y="389dp" />
 </AbsoluteLayout>

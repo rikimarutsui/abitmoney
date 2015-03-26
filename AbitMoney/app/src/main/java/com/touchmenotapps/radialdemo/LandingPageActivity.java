@@ -23,7 +23,7 @@ public class LandingPageActivity extends Activity{
         new Handler().postDelayed(new Runnable() {
             @Override
             public void run() {
-                startActivity(new Intent(LandingPageActivity.this, MainMenu.class));
+                startActivity(new Intent(LandingPageActivity.this, LoginActivity.class));
             }
         }, 1000);
     }
