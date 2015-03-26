@@ -25,6 +25,7 @@
         <activity android:name=".SemiCircularRadialMenuActivity" android:label="Semi Circular Radial Menu"/>
         <activity android:name=".LandingPageActivity" android:label="Landing Page"/>
         <activity android:name=".LoginActivity" android:label="Login Page"/>
+        <activity android:name=".ChestMenuActivity" android:label="eBox Functions"/>
     </application>
 
 </manifest>

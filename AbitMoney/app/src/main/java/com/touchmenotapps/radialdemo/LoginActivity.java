@@ -10,7 +10,6 @@ import android.os.Handler;
 import android.view.KeyEvent;
 import android.view.View;
 import android.widget.Button;
-import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -59,7 +58,7 @@ public class LoginActivity extends Activity {
                         @Override
                         public void run() {
                             toast.cancel();
-                            startActivity(new Intent(LoginActivity.this, MainMenu.class));
+                            startActivity(new Intent(LoginActivity.this, ChestMenuActivity.class));
                         }
                     }, 1000);
                 }

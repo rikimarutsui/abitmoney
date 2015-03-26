@@ -26,35 +26,16 @@ public class ChestMenuActivity extends FragmentActivity {
 
     private FrameLayout mFragmentContainer;
     public RadialMenuItem v1MenuItem, v1MenuCloseItem, v1MenuExpandItem;
+
     public List<RadialMenuItem> v1Children;
 
     @SuppressWarnings("serial")
     @Override
     public void onCreate(Bundle savedInstanceState){
         super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_chest);
 
-        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.HONEYCOMB
-                && Build.VERSION.SDK_INT <= Build.VERSION_CODES.HONEYCOMB_MR2) {
-            setTheme(android.R.style.Theme_Holo_Light);
-            setContentView(R.layout.activity_radial);
-            getActionBar().setDisplayShowHomeEnabled(true);
-        } else if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.ICE_CREAM_SANDWICH) {
-            setTheme(android.R.style.Theme_Holo_Light_DarkActionBar);
-            setContentView(R.layout.activity_radial);
-            getWindow().setUiOptions(
-                    ActivityInfo.UIOPTION_SPLIT_ACTION_BAR_WHEN_NARROW);
-            getActionBar().setDisplayShowHomeEnabled(true);
-        } else {
-            setTheme(R.style.RadialMenuLegacyTitleBar);
-            requestWindowFeature(Window.FEATURE_CUSTOM_TITLE);
-            setContentView(R.layout.activity_radial);
-            getWindow().setFeatureInt(Window.FEATURE_CUSTOM_TITLE,
-                    R.layout.layout_appbar);
-            TextView barHeader = (TextView) findViewById(R.id.appbar_title_text);
-            barHeader.setText(R.string.app_name);
-        }
-
-        mFragmentContainer = (FrameLayout) findViewById(R.id.alt_fragment_container);
+        mFragmentContainer = (FrameLayout) findViewById(R.id.alt_fragment_container_chest);
 
         pieMenu = new RadialMenuWidget(this);
 
@@ -68,6 +49,7 @@ public class ChestMenuActivity extends FragmentActivity {
                 pieMenu.dismiss();
             }
         });
+        v1Children = new ArrayList<RadialMenuItem>();
 
         v1Children.add(new RadialMenuItem(getString(R.string.main_menu), getString(R.string.main_menu)));
         v1Children.get(0).setOnMenuItemPressed(new RadialMenuItem.RadialMenuItemClickListener() {
@@ -144,12 +126,12 @@ public class ChestMenuActivity extends FragmentActivity {
 
         pieMenu.addMenuEntry(new ArrayList<RadialMenuItem>() {
             {
-                add(v1MenuItem);
                 add(v1MenuExpandItem);
+                add(v1MenuItem);
             }
         });
 
-        Button testButton = (Button) this.findViewById(R.id.radial_menu_btn);
+        Button testButton = (Button) this.findViewById(R.id.chest_button);
         testButton.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
                 pieMenu.show(v);
