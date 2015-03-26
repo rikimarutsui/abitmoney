@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- From: file:/Users/rikimarutsui/Desktop/DBS/mastersofcodesample/RadialMenu/app/src/main/res/values/strings.xml -->
+    <eat-comment/>
+    <string-array name="main_menu">
+	    <item>Radial Menu V1</item>
+	    <item>Radial Menu V2</item>
+	    <item>Radial Progress</item>
+	    <item>Semi Circular Radial Menu</item>
+        <item>Landing Page</item>
+	</string-array>
+    <string name="about">About</string>
+    <string name="about_body">Abit Money is a solution of coins</string>
+    <string name="app_name">Abit Money</string>
+    <string name="close">Close</string>
+    <string name="contact">Contact</string>
+    <string name="contact_body">Contact Details Here!</string>
+    <string name="expandable">Expandable</string>
+    <string name="main_body">Long press any part of the screen to bring up radial menu.</string>
+    <string name="main_menu">Home</string>
+    <string name="normal">Normal</string>
+    <string name="open_menu">Open Menu</string>
+    <string name="radial_demo">Radial Menu</string>
+    <!-- From: file:/Users/rikimarutsui/Desktop/DBS/mastersofcodesample/RadialMenu/app/src/main/res/values/styles.xml -->
+    <eat-comment/>
+    <style name="CustomWindowTitleBackground">
+		<item name="android:background">@android:color/white</item>
+    </style>
+    <style name="RadialMenuLegacyTitleBar" parent="android:Theme">
+    	<item name="android:windowTitleSize">35dp</item>
+    	<item name="android:windowTitleBackgroundStyle">@style/CustomWindowTitleBackground</item>
+    </style>
+</resources>

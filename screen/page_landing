@@ -23,4 +23,10 @@
 	android:textSize="32sp"
 	android:layout_x="239dp"
 	android:layout_y="402dp" />
+<ProgressBar
+	android:id="@+id/widget35"
+	android:layout_width="wrap_content"
+	android:layout_height="wrap_content"
+	android:layout_x="217dp"
+	android:layout_y="296dp" />
 </AbsoluteLayout>
