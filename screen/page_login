@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<AbsoluteLayout
+	android:id="@+id/background"
+	android:layout_width="fill_parent"
+	android:layout_height="fill_parent"
+	android:background="#ff00cccc"
+	xmlns:android="http://schemas.android.com/apk/res/android">
+<TextView
+	android:id="@+id/text_login"
+	android:layout_width="wrap_content"
+	android:layout_height="22dp"
+	android:text="Login : "
+	android:hint="Login : "
+	android:layout_x="31dp"
+	android:layout_y="458dp" />
+<TextView
+	android:id="@+id/text_passcode"
+	android:layout_width="wrap_content"
+	android:layout_height="wrap_content"
+	android:text="Passcode : "
+	android:hint="Passcode : "
+	android:layout_x="5dp"
+	android:layout_y="508dp" />
+<EditText
+	android:id="@+id/text_login"
+	android:layout_width="350dp"
+	android:layout_height="wrap_content"
+	android:text="Login..."
+	android:hint="Login..."
+	android:textSize="18sp"
+	android:layout_x="116dp"
+	android:layout_y="447dp" />
+<EditText
+	android:id="@+id/text_passcode"
+	android:layout_width="350dp"
+	android:layout_height="wrap_content"
+	android:text="Passcode..."
+	android:hint="Passcode..."
+	android:textSize="18sp"
+	android:password="true"
+	android:layout_x="116dp"
+	android:layout_y="496dp" />
+<Button
+	android:id="@+id/button_login"
+	android:layout_width="wrap_content"
+	android:layout_height="wrap_content"
+	android:text="Login"
+	android:hint="Login"
+	android:layout_x="222dp"
+	android:layout_y="298dp" />
+</AbsoluteLayout>
